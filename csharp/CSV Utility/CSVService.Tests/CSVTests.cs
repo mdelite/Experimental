@@ -1,16 +1,15 @@
 using Xunit;
-using CSVService;
+using Utility;
 
-namespace CSVService.UnitTests
+namespace Utility.Tests
 {
     public class StringTests
     {
         [Fact]
-        public void Empty_CSVSevice_Returns_Empty_String()
+        public void Default_Constructor_ToString_Returns_Headers()
         {
-            var csv = new CSVService();
-
-            Assert.Equal(csv.ToString(),string.Empty);
+            var csv = new CSVService<string>();
+            
         }
     }
 }
